@@ -1,7 +1,6 @@
 import { forwardRef, useImperativeHandle, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import Cart from './Cart.jsx';
-import { CartContext } from '../contexts/shopping-cart-context.jsx';
 
 const CartModal = forwardRef(function Modal({ cartItems, onUpdateCartItemQuantity, title, actions }, ref) {
   const dialog = useRef();
